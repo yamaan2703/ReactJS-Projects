@@ -1,0 +1,25 @@
+.footer_Section {
+    background-image: url('../images/blog1.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+.footer_shadow {
+    background: rgba(17, 0, 71, 0.238);
+    height: 50vh;
+}
+
+
+@media screen and (max-width: 550px){
+    .footer_Section {
+        background-image: url('../images/blog1.png');
+        background-size: cover;
+        background-position: center;
+        height: 170vh;
+    }
+    .footer_shadow {
+        background: rgba(17, 0, 71, 0.238);
+        height: 170vh;
+    }
+    
+}

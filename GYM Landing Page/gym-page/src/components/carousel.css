@@ -1,0 +1,25 @@
+/* Carousel Container */
+.carousel-container {
+    width: 500px; /* Adjust the width */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); */
+  }
+  
+  /* Individual Carousel Image */
+  .carousel-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Slider Dots */
+  .slick-dots {
+    bottom: 15px;
+  }
+  
+  /* Active Dot Style */
+  .slick-dots li.slick-active button:before {
+    color: rgb(129, 2, 2); /* Change the active dot color */
+  }
+  
