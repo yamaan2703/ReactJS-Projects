@@ -1,20 +1,26 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeItem } from "../features/CartSlice"; 
+import { removeItem } from "../features/CartSlice";
 
 function CartPage() {
   const { cart, totalQuantity, totalPrice } = useSelector(
-    (state) => state.cartReducer 
+    (state) => state.cartReducer
   );
 
   const dispatch = useDispatch();
 
   const handleDecrement = (index) => {
-    // Implement decrement logic
+    // Decrement logic
+    if (cart[index].quantity > 1) {
+      // dispatch(decrementQuantity(index));
+    } else {
+      dispatch(removeItem(index));
+    }
   };
 
   const handleIncrement = (index) => {
-    // Implement increment logic
+    // Increment logic
+    // dispatch(incrementQuantity(index));
   };
 
   return (
@@ -29,7 +35,7 @@ function CartPage() {
                 </div>
                 <div className="card-body">
                   {/* Single item */}
-                  {cart.map((data, index) => (
+                  {cart.map((item, index) => (
                     <div key={index} className="row">
                       <div className="col-lg-3 col-md-12 mb-4 mb-lg-0">
                         {/* Image */}
@@ -38,9 +44,9 @@ function CartPage() {
                           data-mdb-ripple-color="light"
                         >
                           <img
-                            src={data.img}
+                            src={item.img}
                             className="w-100"
-                            alt="Blue Jeans Jacket"
+                            alt={item.title}
                           />
                           <a href="#!">
                             <div
@@ -57,13 +63,13 @@ function CartPage() {
                       <div className="col-lg-5 col-md-6 mb-4 mb-lg-0">
                         {/* Data */}
                         <p>
-                          <strong>{data.title}</strong>
+                          <strong>{item.title}</strong>
                         </p>
-                        
+
                         <button
                           type="button"
                           className="btn btn-primary btn-sm me-1 mb-2"
-                          onClick={() => dispatch(removeItem(data.id))} 
+                          onClick={() => dispatch(removeItem(index))}
                           data-mdb-toggle="tooltip"
                           title="Remove item"
                         >
@@ -89,12 +95,14 @@ function CartPage() {
                               id={`quantity-${index}`}
                               min="0"
                               name="quantity"
-                              value={data.quantity}
-                              defaultValue="1"
+                              value={item.quantity}
                               type="number"
                               className="form-control"
                             />
-                            <label className="form-label" htmlFor={`quantity-${index}`}>
+                            <label
+                              className="form-label"
+                              htmlFor={`quantity-${index}`}
+                            >
                               Quantity
                             </label>
                           </div>
@@ -109,7 +117,7 @@ function CartPage() {
 
                         {/* Price */}
                         <p className="text-start text-md-center">
-                          <strong>Rs. {data.price}</strong>
+                          <strong>Rs. {item.price}</strong>
                         </p>
                         {/* Price */}
                       </div>
