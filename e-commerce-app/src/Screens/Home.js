@@ -1,9 +1,11 @@
-import ImageSlider from "../Components/imageSlider";
+import ImageSlider from "../Components/imageSlide";
+
 
 export default function Home () {
     return (
         <>
         <ImageSlider />
+        
         </>
     )
 }
