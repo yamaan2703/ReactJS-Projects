@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../images/logo.png";
+import { IoNotificationsCircleSharp } from "react-icons/io5";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,11 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -74,19 +71,23 @@ const Navbar = () => {
                 key={item.to}
                 to={item.to}
                 className={`text-gray-300 rounded-md px-3 py-2 text-lg font-medium hover:text-[#e4c590] ${
-                  location.pathname === item.to && "text-[#e4c590]"
+                  location.pathname === item.to ? "text-[#e4c590]" : ""
                 }`}
               >
                 {item.label}
               </Link>
             ))}
           </div>
-
-         
         </div>
-        <div>
-            <p className="text-white">Add to Cart ( 0 )</p>
-          </div>
+
+        <div className="text-5xl md:text-2xl lg:text-5xl text-[#e4c590] flex items-center">
+          <Link to="/cartpage" className="flex items-center relative">
+            <IoNotificationsCircleSharp />
+            <p className="text-sm text-white bg-red-500 rounded-full text-center h-[20px] w-[20px] absolute top-0">
+              1
+            </p>
+          </Link>
+        </div>
       </div>
     </nav>
   );

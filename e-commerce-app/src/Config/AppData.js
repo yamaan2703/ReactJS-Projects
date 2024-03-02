@@ -4,7 +4,7 @@ export const BurgerData = [
     name: "Zinger Burger",
     price: "15.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1513185158878-8d8c2a2a3da3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1513185158878-8d8c2a2a3da3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -12,7 +12,7 @@ export const BurgerData = [
     name: "Massive Zinger Burger",
     price: "19.05",
     rating: "4.7",
-    img: require("https://images.unsplash.com/photo-1597900121060-cf21f1cfa5e6?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -20,7 +20,7 @@ export const BurgerData = [
     name: "Beef Grill Burger",
     price: "20.02",
     rating: "4.9",
-    img: require("https://images.unsplash.com/photo-1534790566855-4cb788d389ec?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1534790566855-4cb788d389ec?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -28,7 +28,7 @@ export const BurgerData = [
     name: "Double Dacker Beef Burger",
     price: "22.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -36,7 +36,7 @@ export const BurgerData = [
     name: "Hunter Beef Burger",
     price: "17.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1549611016-3a70d82b5040?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1549611016-3a70d82b5040?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -44,7 +44,7 @@ export const BurgerData = [
     name: "Smoke Chicken Burger",
     price: "15.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1637710847214-f91d99669e18?q=80&w=1921&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1899&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
 ];
