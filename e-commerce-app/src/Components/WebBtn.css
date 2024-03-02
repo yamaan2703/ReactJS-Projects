@@ -1,0 +1,38 @@
+.button {
+    position: relative;
+    overflow: hidden;
+    padding: 0.2rem;
+    background-size: 400%;
+    color: #e4c590;
+    font-size: 20px;
+    border: 2px solid #e4c590;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    transition: color 0.3s, border-color 0.3s; /* Add transition for color and border-color */
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: #e4c590;
+    color: white;
+    transition: transform 0.3s; /* Add transition for transform */
+  }
+  

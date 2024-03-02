@@ -1,46 +1,90 @@
+import React, { useState, useEffect } from "react";
+import bg1 from "../images/bg1.jpg";
+import bg2 from "../images/bg2.jpg";
+import bg3 from "../images/bg3.jpg";
+import logo from "../images/logo.png";
+import iconImage from "../images/icon.svg";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
+import WebBtn from "./WebBtn";
+import Button from "./WebBtn";
+
+const images = [bg1, bg2, bg3];
+const texts = [
+  "Embark on a culinary journey: Where flavors come alive.",
+  "Savor exceptional cuisine at our high-quality restaurant.",
+  "Enjoy unparalleled hospitality at our restaurant.",
+];
+
 export default function ImageSlider() {
-    return (
-      <>
-        <div id="carouselExampleCaptions" className="carousel slide">
-          <div className="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src="https://images.unsplash.com/photo-1559910369-3924e235c1cf?q=80&w=1779&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="d-block w-100" alt="Slide 1" />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img src="https://images.unsplash.com/photo-1559910369-3924e235c1cf?q=80&w=1779&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="d-block w-100" alt="Slide 2" />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div className="carousel-item">
-              {/* Corrected URL for the third slide's image */}
-              <img src="https://images.unsplash.com/photo-1559910369-3924e235c1cf?q=80&w=1779&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="d-block w-100" alt="Slide 3" />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-      </>
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Function to handle next slide
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
-  }
-  
+  };
+
+  // Function to handle previous slide
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  // Automatically change slide every second
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 4000);
+
+    return () => clearInterval(interval); // Cleanup function to clear interval on component unmount
+  }, [currentIndex]); // Run effect whenever currentIndex changes
+
+  return (
+    <div className="relative w-full h-screen overflow-hidden flex items-center justify-center">
+      <button
+        className="absolute inset-y-0 left-0 z-10 text-4xl m-1 text-white p-1"
+        onClick={prevSlide}
+      >
+        <IoIosArrowDropleftCircle className="text-[#e4c590]" />
+      </button>
+      <button
+        className="absolute inset-y-0 right-0 z-10 text-4xl m-1 text-white p-1"
+        onClick={nextSlide}
+      >
+        <IoIosArrowDroprightCircle className="text-[#e4c590]" />
+      </button>
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${
+            index === currentIndex ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <div className="absolute inset-0 bg-black opacity-80"></div>
+          <img
+            src={image}
+            alt={`Slide ${index + 1}`}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#e4c590] text-center">
+            <p className="tracking-widest text-center text-sm md:text-sm lg:text-lg">
+              DELIGHTFUL EXPERIENCE
+            </p>
+            <div className="">
+              <img className="h-4 w-full my-2" src={iconImage} alt="Logo" />
+            </div>
+            <div className="text-white text-3xl md:text-3xl lg:text-5xl font-serif py-2">
+              {texts[index]}
+            </div>
+            <div className="mt-5">
+              <WebBtn label="View Menu" />
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
