@@ -55,7 +55,7 @@ export const SandwitchData = [
     name: "Paneer Sandwiches",
     price: "10.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1539252554453-80ab65ce3586?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -63,7 +63,7 @@ export const SandwitchData = [
     name: "Veg Special Sandwiches",
     price: "9.05",
     rating: "4.3",
-    img: require("https://images.unsplash.com/photo-1553909489-cd47e0907980?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1553909489-cd47e0907980?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -71,7 +71,7 @@ export const SandwitchData = [
     name: "Club Sandwiches",
     price: "12.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1540713434306-58505cf1b6fc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1540713434306-58505cf1b6fc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -79,7 +79,7 @@ export const SandwitchData = [
     name: "Chicken Sandwiches",
     price: "13.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1559466273-d95e72debaf8?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1559466273-d95e72debaf8?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -87,7 +87,7 @@ export const SandwitchData = [
     name: "Beef Sandwiches",
     price: "15.05",
     rating: "4.7",
-    img: require("https://images.unsplash.com/photo-1592415486689-125cbbfcbee2?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1592415486689-125cbbfcbee2?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -95,7 +95,7 @@ export const SandwitchData = [
     name: "Cheese Sandwiches",
     price: "10.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1621852004158-f3bc188ace2d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1621852004158-f3bc188ace2d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
 ];
@@ -106,7 +106,7 @@ export const PizzaData = [
     name: "Double Cheeze Pizza",
     price: "30.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -114,7 +114,7 @@ export const PizzaData = [
     name: "Veg Special Pizza",
     price: "34.05",
     rating: "4.7",
-    img: require("https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -122,7 +122,7 @@ export const PizzaData = [
     name: "Tandori Pizza",
     price: "37.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1590947132387-155cc02f3212?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1590947132387-155cc02f3212?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -130,7 +130,7 @@ export const PizzaData = [
     name: "BBQ Pizza",
     price: "30.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1552539618-7eec9b4d1796?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1552539618-7eec9b4d1796?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -138,7 +138,7 @@ export const PizzaData = [
     name: "Malai Boti Pizza",
     price: "30.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1618213957768-7789409b9dd8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1618213957768-7789409b9dd8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -146,7 +146,7 @@ export const PizzaData = [
     name: "Peproni Pizza",
     price: "32.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1566843972142-a7fcb70de55a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHBpenphfGVufDB8fDB8fHww"),
+    img: "https://images.unsplash.com/photo-1566843972142-a7fcb70de55a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHBpenphfGVufDB8fDB8fHww",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
 ];
@@ -154,19 +154,11 @@ export const PizzaData = [
 // Deseret
 export const CupCakeData = [
   {
-    id: 1,
-    name: "Choclate Chips",
-    price: "9.05",
-    rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
-    desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
-  },
-  {
     id: 2,
     name: "Dark Choclate",
     price: "11.05",
     rating: "4.3",
-    img: require("https://images.unsplash.com/photo-1601409751311-cbecfe223af4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1601409751311-cbecfe223af4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -174,7 +166,7 @@ export const CupCakeData = [
     name: "Vanilla",
     price: "9.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -182,7 +174,7 @@ export const CupCakeData = [
     name: "Strawberry",
     price: "7.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -190,7 +182,7 @@ export const CupCakeData = [
     name: "Peanuts Special",
     price: "12.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1603532648955-039310d9ed75?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1603532648955-039310d9ed75?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -198,7 +190,7 @@ export const CupCakeData = [
     name: "Choclate Chips",
     price: "9.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
   {
@@ -206,7 +198,7 @@ export const CupCakeData = [
     name: "Oreo Cup",
     price: "9.05",
     rating: "4.5",
-    img: require("https://images.unsplash.com/photo-1612203985729-70726954388c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    img: "https://images.unsplash.com/photo-1612203985729-70726954388c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
   },
 ];
@@ -217,7 +209,7 @@ export const CakeData = [
         name: "Dairy Milk",
         price: "19.05",
         rating: "4.5",
-        img: require("https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+        img: "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
       },
       {
@@ -225,7 +217,7 @@ export const CakeData = [
         name: "Choclate Special",
         price: "21.05",
         rating: "4.5",
-        img: require("https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1989&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+        img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1989&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
       },
       {
@@ -233,7 +225,7 @@ export const CakeData = [
         name: "Kids Special",
         price: "19.05",
         rating: "4.5",
-        img: require("https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=1872&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+        img: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=1872&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
       },
       {
@@ -241,7 +233,7 @@ export const CakeData = [
         name: "Cheesecake",
         price: "29.05",
         rating: "4.7",
-        img: require("https://images.unsplash.com/photo-1542826438-bd32f43d626f?q=80&w=1892&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+        img: "https://images.unsplash.com/photo-1542826438-bd32f43d626f?q=80&w=1892&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
       },
       {
@@ -249,7 +241,7 @@ export const CakeData = [
         name: "Lemon",
         price: "19.05",
         rating: "4.5",
-        img: require("https://plus.unsplash.com/premium_photo-1664205766193-46193f865ae1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+        img: "https://plus.unsplash.com/premium_photo-1664205766193-46193f865ae1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
       },
       {
@@ -257,7 +249,7 @@ export const CakeData = [
         name: "Strawberry",
         price: "20.05",
         rating: "4.5",
-        img: require("https://images.unsplash.com/photo-1622621746668-59fb299bc4d7?q=80&w=1866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+        img: "https://images.unsplash.com/photo-1622621746668-59fb299bc4d7?q=80&w=1866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
       },   
 ]
@@ -268,8 +260,8 @@ export const CoffeeData = [
         name: "Black Coffee",
         price: "25.50",
         volume: "116 ml",
-        stars: "4.6",
-        image: { uri: "https://images.unsplash.com/photo-1621555470436-d36e9683bae5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D" },
+        rating: "4.6",
+        img: "https://images.unsplash.com/photo-1621555470436-d36e9683bae5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D",
         desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
     },
     {
@@ -277,8 +269,8 @@ export const CoffeeData = [
         name: "Cappuccinco",
         price: "30.50",
         volume: "110 ml",
-        stars: "4.4",
-        image: { uri: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FwcHVjY2lubyUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D"} ,
+        rating: "4.4",
+        img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FwcHVjY2lubyUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D" ,
         desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
     },
     {
@@ -286,8 +278,8 @@ export const CoffeeData = [
         name: "Latte",
         price: "15.50",
         volume: "100 ml",
-        stars: "4.2",
-        image: { uri: "https://images.unsplash.com/photo-1587080413959-06b859fb107d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxhdHRlJTIwY29mZmVlfGVufDB8fDB8fHww"} ,
+        rating: "4.2",
+        img: "https://images.unsplash.com/photo-1587080413959-06b859fb107d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxhdHRlJTIwY29mZmVlfGVufDB8fDB8fHww" ,
         desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
     },
     {
@@ -295,8 +287,8 @@ export const CoffeeData = [
         name: "Espresso",
         price: "35.50",
         volume: "125 ml",
-        stars: "4.7",
-        image: {uri : "https://images.unsplash.com/photo-1606499436678-9ef7fc58d5a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fGVzcHJlc3NvJTIwY29mZmVlfGVufDB8fDB8fHww"} ,
+        rating: "4.7",
+        img: "https://images.unsplash.com/photo-1606499436678-9ef7fc58d5a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fGVzcHJlc3NvJTIwY29mZmVlfGVufDB8fDB8fHww" ,
         desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
     },
     {
@@ -304,8 +296,8 @@ export const CoffeeData = [
         name: "Mocha",
         price: "15.50",
         volume: "116 ml",
-        stars: "4.1",
-        image: { uri : "https://plus.unsplash.com/premium_photo-1668970851336-6c81cc888ba7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8TW9jaGElMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D"} ,
+        rating: "4.1",
+        img: "https://plus.unsplash.com/premium_photo-1668970851336-6c81cc888ba7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8TW9jaGElMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D" ,
         desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
     },
     {
@@ -313,8 +305,8 @@ export const CoffeeData = [
         name: "Americano",
         price: "30.50",
         volume: "126 ml",
-        stars: "4.7",
-        image: { uri : "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QW1lcmljYW5vJTIwY29mZmVlfGVufDB8fDB8fHww"} ,
+        rating: "4.7",
+        img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QW1lcmljYW5vJTIwY29mZmVlfGVufDB8fDB8fHww" ,
         desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
     },
 ];
