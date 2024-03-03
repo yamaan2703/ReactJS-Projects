@@ -25,7 +25,7 @@ export const BurgerData = [
   },
   {
     id: 4,
-    name: "Double Dacker Beef Burger",
+    name: "Double Beef Burger",
     price: "22.05",
     rating: "4.5",
     img: "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

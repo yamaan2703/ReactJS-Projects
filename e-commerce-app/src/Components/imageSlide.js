@@ -80,7 +80,7 @@ export default function ImageSlider() {
               {texts[index]}
             </div>
             <div className="mt-5">
-              <WebBtn label="View Menu" />
+              <WebBtn label="view Menu"/>
             </div>
           </div>
         </div>
