@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../images/logo.png";
 import { IoNotificationsCircleSharp } from "react-icons/io5";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const {totalQuantity} = useSelector((state) => state.allcarts)
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -84,7 +86,7 @@ const Navbar = () => {
           <Link to="/cartpage" className="flex items-center relative">
             <IoNotificationsCircleSharp />
             <p className="text-sm text-white bg-red-500 rounded-full text-center h-[20px] w-[20px] absolute top-0">
-              1
+              {totalQuantity}
             </p>
           </Link>
         </div>

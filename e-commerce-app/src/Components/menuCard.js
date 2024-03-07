@@ -107,7 +107,10 @@ export default function MenuCard() {
                                 <p className="card-text text-xl text-yellow-600 flex justify-center">$<span className="mx-1">{item.price}</span></p>
                             </div>
                             <div className="my-1 mb-3">
-                                <WebBtn label="Order Now"/>
+                                <WebBtn 
+                                label="Order Now"
+                                onClick={() => dispatch(addToCart(item))}
+                                />
                             </div>
                         </div>
                     </div>
@@ -129,7 +132,10 @@ export default function MenuCard() {
                                 <p className="card-text text-xl text-yellow-600 flex justify-center">$<span className="mx-1">{item.price}</span></p>
                             </div>
                             <div className="my-1 mb-3">
-                                <WebBtn label="Order Now"/>
+                                <WebBtn 
+                                label="Order Now"
+                                onClick={() => dispatch(addToCart(item))}
+                                />
                             </div>
                         </div>
                     </div>
@@ -151,7 +157,10 @@ export default function MenuCard() {
                                 <p className="card-text text-xl text-yellow-600 flex justify-center">$<span className="mx-1">{item.price}</span></p>
                             </div>
                             <div className="my-1 mb-3">
-                                <WebBtn label="Order Now"/>
+                                <WebBtn 
+                                label="Order Now"
+                                onClick={() => dispatch(addToCart(item))}
+                                />
                             </div>
                         </div>
                     </div>
@@ -173,7 +182,10 @@ export default function MenuCard() {
                                 <p className="card-text text-xl text-yellow-600 flex justify-center">$<span className="mx-1">{item.price}</span></p>
                             </div>
                             <div className="my-1 mb-3">
-                                <WebBtn label="Order Now"/>
+                                <WebBtn 
+                                label="Order Now"
+                                onClick={() => dispatch(addToCart(item))}
+                                />
                             </div>
                         </div>
                     </div>
