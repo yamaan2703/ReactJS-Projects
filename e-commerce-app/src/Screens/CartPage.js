@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import bg1 from "../images/bg2.jpg";
 import WebBtn from "../Components/WebBtn";
 import { useDispatch, useSelector } from "react-redux";
 import { MdDelete } from "react-icons/md";
-import { removeItem } from "../Features/cartSlice";
+import { removeItem, increaseItemQuantity, decreaseItemQuantity } from "../Features/cartSlice";
 
 export default function CartPage() {
   const { cart, totalQuantity, totalPrice } = useSelector(
@@ -12,22 +11,23 @@ export default function CartPage() {
   const dispatch = useDispatch();
 
   // Function to update quantity of a product in the cart
-  const updateQuantity = (productId, newQuantity) => {
-    // Assuming you have an action to update the quantity in your Redux store
-    // Dispatch an action here to update the quantity of the product in the cart
-  };
+  // const updateQuantity = (productId, newQuantity) => {
+
+  // };
+  // Assuming you have an action to update the quantity in your Redux store
+  // Dispatch an action here to update the quantity of the product in the cart
 
   // Function to handle incrementing quantity
-  const increment = (productId) => {
-    updateQuantity(productId + 1);
-  };
+  // const increment = (productId) => {
+  //   updateQuantity(productId + 1);
+  // };
 
   // Function to handle decrementing quantity
-  const decrement = (productId) => {
-    updateQuantity(productId - 1);
-    // if ("" > 0) {
-    // }
-  };
+  // const decrement = (productId) => {
+  //   updateQuantity(productId - 1);
+  //   // if ("" > 0) {
+  //   // }
+  // };
 
   return (
     <div className="cart_page  bg-[#0d1819] h-screen relative">
@@ -62,7 +62,7 @@ export default function CartPage() {
                     <div className="my-4">
                       <div className="flex items-center">
                         <button
-                          onClick={() => decrement(data.id)}
+                          onClick={() => dispatch(decreaseItemQuantity(data.id))}
                           className="px-3 py-2 rounded-xl font-bold text-2xl bg-[#e4c590] text-white"
                         >
                           -
@@ -74,7 +74,7 @@ export default function CartPage() {
                           className="text-center w-[50px] py-2 mx-2 bg-transparent border-2 border-[#e4c590]"
                         />
                         <button
-                          onClick={() => increment(data.id)}
+                          onClick={() => dispatch(increaseItemQuantity(data.id))}
                           className="px-3 py-2 rounded-xl font-bold text-xl bg-[#e4c590] text-white"
                         >
                           +

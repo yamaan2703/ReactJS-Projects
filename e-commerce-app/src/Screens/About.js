@@ -1,7 +1,9 @@
 export default function About () {
     return (
         <>
-        <h1 className="text-yellow text-5xl">About</h1>
+        <div className="about_section bg-[#0d1819] h-screen">
+
+        </div>
         </>
     )
 }
