@@ -26,30 +26,33 @@ export const cartSlice = createSlice({
     // removeItem: (state, action) => {
     //     state.cart = state.cart.filter((item) => item.id !== action.payload.id)
     // }
-    removeItem: (state, action) => {
-        state.cart = state.cart.filter((item) => item.id !== action.payload.id);
-        state.totalQuantity -= 1;
-        state.totalPrice -= action.payload.price * action.payload.quantity; 
-      },
+  removeItem: (state, action) => {
+  const itemToRemove = state.cart.find(item => item.id === action.payload.id);
+  if (itemToRemove) {
+    state.totalQuantity -= itemToRemove.quantity;
+    state.totalPrice -= itemToRemove.price * itemToRemove.quantity;
+    state.cart = state.cart.filter(item => item.id !== action.payload.id);
+  }
+},
 
-    increaseItemQuantity: (state, action) => {
-        state.cart = state.cart.map((item) => {
-          if(item.id === action.payload) {
-            return { ...item, quantity: item.quantity + 1}
-          }
-          return item
-        }) 
-    },
+increaseItemQuantity: (state, action) => {
+  state.cart = state.cart.map(item => {
+    if (item.id === action.payload) {
+      return { ...item, quantity: item.quantity + 1 };
+    }
+    return item;
+  });
+},
 
-    decreaseItemQuantity: (state, action) => {
-      state.cart = state.cart.map((item) => {
-        if(item.id === action.payload) {
-          return { ...item, quantity: item.quantity + 1}
-        }
-        return item
-      }) 
-  },
-      
+decreaseItemQuantity: (state, action) => {
+  state.cart = state.cart.map(item => {
+    if (item.id === action.payload) {
+      return { ...item, quantity: item.quantity - 1 };
+    }
+    return item;
+  });
+}
+
 })
 
 export const { addToCart, removeItem, increaseItemQuantity, decreaseItemQuantity} = cartSlice.actions

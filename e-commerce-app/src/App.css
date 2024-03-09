@@ -19,7 +19,8 @@
     background: url("./images/contact_img.png");
     background-size: cover;
     background-position: center;
-    height: "200vh";
+    height: 90vh;
+    /* width: 100px; */
 
 }
 

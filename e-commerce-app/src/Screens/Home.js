@@ -3,6 +3,7 @@ import WebBtn from "../Components/WebBtn";
 import ImageSlider from "../Components/imageSlide";
 import About from "./About";
 import Contact from "./Contact";
+import Footer from "../Components/footer";
 
 export default function Home() {
   return (
@@ -85,6 +86,8 @@ export default function Home() {
         </div>
 
         <Contact />
+
+        <Footer />
       </div>
     </>
   );
