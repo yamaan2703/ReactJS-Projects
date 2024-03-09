@@ -2,58 +2,71 @@ import { createSlice } from "@reduxjs/toolkit";
 import { BurgerData } from "../Config/AppData";
 
 const initialState = {
-    cart: [],
-    items: BurgerData,
-    totalQuantity: 0,
-    totalPrice: 0, 
-}
+  cart: [],
+  items: BurgerData,
+  totalQuantity: 0,
+  totalPrice: 0,
+};
 
 export const cartSlice = createSlice({
-    name: "cart",
-    initialState,
-    reducers: {
-        addToCart: (state, action) => {
-            const findIndex = state.cart.findIndex((item) => item.id === action.payload.id);
-            if (findIndex >= 0) {
-              state.cart[findIndex].quantity += 1;
-            } else {
-              state.cart.push({ ...action.payload, quantity: 1 });
-            }
-            state.totalQuantity += 1;
-            state.totalPrice = state.cart.reduce((total, item) => total + item.price * item.quantity, 0);
-          }     
+  name: "cart",
+  initialState,
+  reducers: {
+    addToCart: (state, action) => {
+      const findIndex = state.cart.findIndex(
+        (item) => item.id === action.payload.id
+      );
+      if (findIndex >= 0) {
+        state.cart[findIndex].quantity += 1;
+      } else {
+        state.cart.push({ ...action.payload, quantity: 1 });
+      }
+      state.totalQuantity += 1;
+      state.totalPrice = state.cart.reduce(
+        (total, item) => total + item.price * item.quantity,
+        0
+      );
     },
-    // removeItem: (state, action) => {
-    //     state.cart = state.cart.filter((item) => item.id !== action.payload.id)
-    // }
-  removeItem: (state, action) => {
-  const itemToRemove = state.cart.find(item => item.id === action.payload.id);
-  if (itemToRemove) {
-    state.totalQuantity -= itemToRemove.quantity;
-    state.totalPrice -= itemToRemove.price * itemToRemove.quantity;
-    state.cart = state.cart.filter(item => item.id !== action.payload.id);
-  }
-},
+    removeItem: (state, action) => {
+      const itemToRemove = state.cart.find(
+        (item) => item.id === action.payload
+      );
+      console.log('----------------------------')
+      console.log(action.payload)
+      if (itemToRemove) {
+        state.totalQuantity -= itemToRemove.quantity;
+        state.totalPrice -= itemToRemove.price * itemToRemove.quantity;
+        state.cart = state.cart.filter((item) => item.id !== action.payload);
+      }
+    },
 
-increaseItemQuantity: (state, action) => {
-  state.cart = state.cart.map(item => {
-    if (item.id === action.payload) {
-      return { ...item, quantity: item.quantity + 1 };
-    }
-    return item;
-  });
-},
+    increaseItemQuantity: (state, action) => {
+      state.cart = state.cart.map((item) => {
+        if (item.id === action.payload) {
+          return { ...item, quantity: item.quantity + 1 };
+        }
+        return item;
+      });
+    },
+    // ye do pages me hai code ...
+    decreaseItemQuantity: (state, action) => {
+      state.cart = state.cart.map((item) => {
+        if (item.id === action.payload) {
+          return { ...item, quantity: item.quantity - 1 };
+        }
+        return item;
+      });
+    },
+  },
+  // removeItem: (state, action) => {
+  //     state.cart = state.cart.filter((item) => item.id !== action.payload.id)
+  // }
+});
 
-decreaseItemQuantity: (state, action) => {
-  state.cart = state.cart.map(item => {
-    if (item.id === action.payload) {
-      return { ...item, quantity: item.quantity - 1 };
-    }
-    return item;
-  });
-}
-
-})
-
-export const { addToCart, removeItem, increaseItemQuantity, decreaseItemQuantity} = cartSlice.actions
-export default cartSlice.reducer
+export const {
+  addToCart,
+  removeItem,
+  increaseItemQuantity,
+  decreaseItemQuantity,
+} = cartSlice.actions;
+export default cartSlice.reducer;
