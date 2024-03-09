@@ -9,26 +9,6 @@ export default function CartPage() {
     (state) => state.allcarts
   );
   const dispatch = useDispatch();
-
-  // Function to update quantity of a product in the cart
-  // const updateQuantity = (productId, newQuantity) => {
-
-  // };
-  // Assuming you have an action to update the quantity in your Redux store
-  // Dispatch an action here to update the quantity of the product in the cart
-
-  // Function to handle incrementing quantity
-  // const increment = (productId) => {
-  //   updateQuantity(productId + 1);
-  // };
-
-  // Function to handle decrementing quantity
-  // const decrement = (productId) => {
-  //   updateQuantity(productId - 1);
-  //   // if ("" > 0) {
-  //   // }
-  // };
-
   return (
     <div className="cart_page  bg-[#0d1819] h-screen relative">
       <div className="container bg-[#0d1819] pt-20 ">
