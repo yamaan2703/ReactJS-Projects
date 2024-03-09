@@ -6,6 +6,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    /* background-color: #0d1819; */
 }
 @media screen and (max-width: 900px){
     
@@ -13,5 +14,12 @@
 .cart_page {
     background-color: #0d1819;
     height: full;
+}
+.contact_img{
+    background: url("./images/contact_img.png");
+    background-size: cover;
+    background-position: center;
+    height: "200vh";
+
 }
 

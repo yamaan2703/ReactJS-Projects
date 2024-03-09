@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <nav
       className={`p-4 fixed top-0 w-full z-10 transition-all ${
-        isScrolled ? "bg-[#0e0d0b]" : "bg-transparent"
+        isScrolled ? "bg-[#0b0a08]" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">

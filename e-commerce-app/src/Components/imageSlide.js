@@ -8,6 +8,7 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 import WebBtn from "./WebBtn";
 import Button from "./WebBtn";
+import { Link } from "react-router-dom";
 
 const images = [bg1, bg2, bg3];
 const texts = [
@@ -80,7 +81,9 @@ export default function ImageSlider() {
               {texts[index]}
             </div>
             <div className="mt-5">
+              <Link to="/menu">
               <WebBtn label="view Menu"/>
+              </Link>
             </div>
           </div>
         </div>
