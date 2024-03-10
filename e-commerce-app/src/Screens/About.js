@@ -1,5 +1,6 @@
 import icon from "../images/icon.svg";
 
+
 export default function About() {
   return (
     <>
@@ -37,6 +38,8 @@ export default function About() {
             </div>
           </div>
         </div>
+
+     
       </div>
     </>
   );

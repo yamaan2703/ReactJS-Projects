@@ -41,8 +41,8 @@ export default function MenuCard() {
 
     return (
         <div className="container p-5">
-            <h1 className="Text-center text-6xl text-[#e4c590] text-center font-serif shadow-md shadow-white py-2 mb-5">Menu Card</h1>
-            <h3 className="text-white text-5xl font-serif p-3 ">Burgers</h3>
+            <h1 className="Text-center text-2xl md:text-2xl lg:text-6xl text-[#e4c590] text-center font-serif shadow-md shadow-white py-2 mb-5">Menu Card</h1>
+            <h3 className="text-white text-5    xl font-serif p-3 ">Burgers</h3>
             <Slider {...settings}>
                 {items.map((item, index) => (
                     <div className="col-md-4" key={index}>
