@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #c9ab81      Text Heading Colour */
+/* #0f1d22      Background Colour */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    /* background-color: #0f1d22; */
+    /* color: white; */
+}
