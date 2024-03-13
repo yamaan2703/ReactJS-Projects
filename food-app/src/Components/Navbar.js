@@ -7,10 +7,15 @@ import { FaShoppingCart } from "react-icons/fa";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   useEffect(() => {
@@ -73,8 +78,8 @@ const Navbar = () => {
               <div
                 key={item.to}
                 className="relative lg:ml-6 mt-2 lg:mt-0"
-                onMouseEnter={() => setIsOpen(true)}
-                onMouseLeave={() => setIsOpen(false)}
+                onMouseEnter={() => setIsDropdownOpen(true)}
+                onMouseLeave={() => setIsDropdownOpen(false)}
               >
                 <Link
                   to={item.to}
@@ -84,25 +89,25 @@ const Navbar = () => {
                 >
                   {item.label}
                 </Link>
-                {item.dropdown && isOpen && (
-                  <div className="absolute top-full left-0 mt-2 bg-[#0f1d22] rounded-md shadow-lg">
+                {item.dropdown && isDropdownOpen && (
+                  <div className="absolute top-full left-0 mt-2 bg-[#0f1d22] w-[100px] rounded-md shadow-lg">
                     <Link
                       to="/menu/pasta"
-                      className="block px-4 py-2 text-white hover:bg-[#c9ab81]"
+                      className="block px-4 py-2 text-white hover:bg-[#c9ab81] "
                     >
-                      Pasta
+                      Fast Food
                     </Link>
                     <Link
                       to="/menu/pizza"
                       className="block px-4 py-2 text-white hover:bg-[#c9ab81]"
                     >
-                      Pizza
+                      Desi
                     </Link>
                     <Link
                       to="/menu/coffee"
                       className="block px-4 py-2 text-white hover:bg-[#c9ab81]"
                     >
-                      Coffee
+                      Desert
                     </Link>
                   </div>
                 )}
