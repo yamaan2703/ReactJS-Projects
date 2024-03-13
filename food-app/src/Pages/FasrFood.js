@@ -5,8 +5,12 @@ import { IoStarSharp } from "react-icons/io5";
 import { BurgerData } from "../Config/AppData";
 import { PizzaData } from "../Config/AppData";
 import { SandwitchData } from "../Config/AppData";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../Features/CartSlice";
 
 function FastFood() {
+  const items = useSelector((state) => state.allcarts.items)
+  const dispatch = useDispatch()
   return (
     <div className="bg-[#0f1d22]">
       <div className="relative">
@@ -61,7 +65,10 @@ function FastFood() {
                 </h3>
                 <p className="text-xl text-yellow-500 py-1">$ {item.price}</p>
                 <div className="my-3">
-                  <Button label="Order Now" />
+                  <Button 
+                  label="Order Now" 
+                  onClick={() => dispatch(addToCart(items))}
+                  />
                 </div>
               </div>
             </div>
@@ -128,7 +135,7 @@ function FastFood() {
                 <img
                   src={item.img}
                   alt={item.name}
-                  className="rounded-t-xl w-full"
+                  className="rounded-t-xl w-full h-[200px]"
                 />
               </div>
               <div className="absolute top-0 right-0 p-2 bg-black bg-opacity-80 rounded-tr-xl rounded-bl-xl">

@@ -55,7 +55,7 @@ export const BurgerData = [
       name: "Paneer Sandwiches",
       price: "20",
       rating: "4.5",
-      img: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://images.unsplash.com/photo-1628191010210-a59de33e5941?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
@@ -71,7 +71,7 @@ export const BurgerData = [
       name: "Club Sandwiches",
       price: "12.05",
       rating: "4.5",
-      img: "https://images.unsplash.com/photo-1540713434306-58505cf1b6fc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://images.unsplash.com/photo-1567234669013-216f3a40e02e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
@@ -79,7 +79,7 @@ export const BurgerData = [
       name: "Chicken Sandwiches",
       price: "13.05",
       rating: "4.5",
-      img: "https://images.unsplash.com/photo-1559466273-d95e72debaf8?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://images.unsplash.com/photo-1641334398441-fb60923b86ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
@@ -155,34 +155,34 @@ export const BurgerData = [
   export const CupCakeData = [
     {
       id: 2,
-      name: "Dark Choclate",
-      price: "11.05",
+      name: "Oreo Choclate",
+      price: "11",
       rating: "4.3",
       img: "https://images.unsplash.com/photo-1601409751311-cbecfe223af4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
       id: 3,
-      name: "Vanilla",
-      price: "9.05",
+      name: "Cherry Ice",
+      price: "9",
       rating: "4.5",
-      img: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://images.unsplash.com/photo-1599785209615-a35f883d93c8?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
       id: 4,
-      name: "Strawberry",
-      price: "7.05",
+      name: "Icing with sprinkles",
+      price: "7",
       rating: "4.5",
-      img: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
       id: 5,
-      name: "Peanuts Special",
+      name: "Dark Choclate",
       price: "12.05",
       rating: "4.5",
-      img: "https://images.unsplash.com/photo-1603532648955-039310d9ed75?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://images.unsplash.com/photo-1574085733277-851d9d856a3a?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
@@ -195,10 +195,10 @@ export const BurgerData = [
     },
     {
       id: 7,
-      name: "Oreo Cup",
+      name: "Strawberry",
       price: "9.05",
       rating: "4.5",
-      img: "https://images.unsplash.com/photo-1612203985729-70726954388c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://images.unsplash.com/photo-1582241785274-2009ebb9b440?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
   ];
@@ -258,7 +258,7 @@ export const BurgerData = [
       {
           id: 1,
           name: "Black Coffee",
-          price: "25.50",
+          price: "25",
           volume: "116 ml",
           rating: "4.6",
           img: "https://images.unsplash.com/photo-1621555470436-d36e9683bae5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D",
@@ -267,7 +267,7 @@ export const BurgerData = [
       {
           id: 2,
           name: "Cappuccinco",
-          price: "30.50",
+          price: "30",
           volume: "110 ml",
           rating: "4.4",
           img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FwcHVjY2lubyUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D" ,
@@ -276,7 +276,7 @@ export const BurgerData = [
       {
           id: 3,
           name: "Latte",
-          price: "15.50",
+          price: "15",
           volume: "100 ml",
           rating: "4.2",
           img: "https://images.unsplash.com/photo-1587080413959-06b859fb107d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxhdHRlJTIwY29mZmVlfGVufDB8fDB8fHww" ,
@@ -285,7 +285,7 @@ export const BurgerData = [
       {
           id: 4,
           name: "Espresso",
-          price: "35.50",
+          price: "35",
           volume: "125 ml",
           rating: "4.7",
           img: "https://images.unsplash.com/photo-1606499436678-9ef7fc58d5a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fGVzcHJlc3NvJTIwY29mZmVlfGVufDB8fDB8fHww" ,
@@ -294,7 +294,7 @@ export const BurgerData = [
       {
           id: 5,
           name: "Mocha",
-          price: "15.50",
+          price: "15",
           volume: "116 ml",
           rating: "4.1",
           img: "https://plus.unsplash.com/premium_photo-1668970851336-6c81cc888ba7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8TW9jaGElMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D" ,
@@ -303,7 +303,7 @@ export const BurgerData = [
       {
           id: 6,
           name: "Americano",
-          price: "30.50",
+          price: "30",
           volume: "126 ml",
           rating: "4.7",
           img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QW1lcmljYW5vJTIwY29mZmVlfGVufDB8fDB8fHww" ,
