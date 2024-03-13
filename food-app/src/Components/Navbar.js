@@ -92,22 +92,22 @@ const Navbar = () => {
                 {item.dropdown && isDropdownOpen && (
                   <div className="absolute top-full left-0 mt-2 bg-[#0f1d22] w-[100px] rounded-md shadow-lg">
                     <Link
-                      to="/menu/pasta"
+                      to="/fastfood"
                       className="block px-4 py-2 text-white hover:bg-[#c9ab81] "
                     >
                       Fast Food
                     </Link>
                     <Link
-                      to="/menu/pizza"
+                      to="/desi"
                       className="block px-4 py-2 text-white hover:bg-[#c9ab81]"
                     >
                       Desi
                     </Link>
                     <Link
-                      to="/menu/coffee"
+                      to="/dessert"
                       className="block px-4 py-2 text-white hover:bg-[#c9ab81]"
                     >
-                      Desert
+                      Dessert
                     </Link>
                   </div>
                 )}
@@ -120,8 +120,10 @@ const Navbar = () => {
           <div>
             <Button label="Book a Table" />
           </div>
-          <div className="px-3 text-2xl text-white hover:text-[#c9ab81] transition duration-500">
-            <FaShoppingCart className="" />
+          <div className="px-3 text-white hover:text-[#c9ab81] transition duration-500">
+            <Link to="/cartpage">
+            <FaShoppingCart className="text-2xl" />
+            </Link>
           </div>
         </div>
       </div>

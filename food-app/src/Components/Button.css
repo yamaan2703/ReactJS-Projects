@@ -1,5 +1,5 @@
 .button {
-    --color: #c9ab81;
+    --color: #e4c590;
     padding: 10px 25px;
     background-color: transparent;
     /* border-radius: .3em; */
@@ -9,7 +9,7 @@
     transition: .5s;
     font-weight: 400;
     font-size: 17px;
-    border: 1px solid;
+    border: 1px solid #e4c590;
     font-family: inherit;
     text-transform: uppercase;
     color: var(--color);
