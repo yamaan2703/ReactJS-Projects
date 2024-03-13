@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { BurgerData } from "../Config/AppData"
 
 const initialState = {
     cart: [],

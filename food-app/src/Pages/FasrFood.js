@@ -67,7 +67,7 @@ function FastFood() {
                 <div className="my-3">
                   <Button 
                   label="Order Now" 
-                  onClick={() => dispatch(addToCart(items))}
+                  onClick={() => dispatch(addToCart(item))}
                   />
                 </div>
               </div>
@@ -76,7 +76,7 @@ function FastFood() {
         </div>
       </div>
 
-      <div className="container mx-auto p-7">
+      {/* <div className="container mx-auto p-7">
         <h1
           style={{
             fontFamily: "Protest Riot, sans-serif",
@@ -115,9 +115,9 @@ function FastFood() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
-      <div className="container mx-auto p-7">
+      {/* <div className="container mx-auto p-7">
         <h1
           style={{
             fontFamily: "Protest Riot, sans-serif",
@@ -156,7 +156,7 @@ function FastFood() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
     </div>
   );
