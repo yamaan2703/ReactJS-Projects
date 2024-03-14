@@ -72,7 +72,7 @@ const Navbar = () => {
             {[
               { to: "/", label: "Home" },
               { to: "/about", label: "About" },
-              { to: "/menu", label: "Menu", dropdown: true },
+              { to: "/", label: "Menu", dropdown: true },
               { to: "/contact", label: "Contact" },
             ].map((item) => (
               <div

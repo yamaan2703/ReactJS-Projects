@@ -24,7 +24,7 @@ function FastFood() {
             }}
             className="text-4xl md:text-4xl lg:text-6xl text-[#e4c590]"
           >
-            Our Delicious Menu
+            Fast Food Section...
           </h1>
           <p className="text-white text-lg md:text-lg lg:text-2xl py-2 font-serif">
             We offer the best prices along with the best taste and quality.
@@ -76,7 +76,7 @@ function FastFood() {
         </div>
       </div>
 
-      {/* <div className="container mx-auto p-7">
+      <div className="container mx-auto p-7">
         <h1
           style={{
             fontFamily: "Protest Riot, sans-serif",
@@ -109,15 +109,18 @@ function FastFood() {
                 </h3>
                 <p className="text-xl text-yellow-500 py-1">$ {item.price}</p>
                 <div className="my-3">
-                  <Button label="Order Now" />
+                  <Button 
+                  label="Order Now" 
+                  onClick={() => dispatch(addToCart(item))}
+                  />
                 </div>
               </div>
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="container mx-auto p-7">
+      <div className="container mx-auto p-7">
         <h1
           style={{
             fontFamily: "Protest Riot, sans-serif",
@@ -150,13 +153,16 @@ function FastFood() {
                 </h3>
                 <p className="text-xl text-yellow-500 py-1">$ {item.price}</p>
                 <div className="my-3">
-                  <Button label="Order Now" />
+                  <Button 
+                  label="Order Now" 
+                  onClick={() => dispatch(addToCart(item))}
+                  />
                 </div>
               </div>
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
 
     </div>
   );

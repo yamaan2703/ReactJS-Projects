@@ -180,7 +180,7 @@ export const BurgerData = [
     {
       id: 5,
       name: "Dark Choclate",
-      price: "12.05",
+      price: "12",
       rating: "4.5",
       img: "https://images.unsplash.com/photo-1574085733277-851d9d856a3a?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
@@ -188,7 +188,7 @@ export const BurgerData = [
     {
       id: 6,
       name: "Choclate Chips",
-      price: "9.05",
+      price: "9",
       rating: "4.5",
       img: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
@@ -196,7 +196,7 @@ export const BurgerData = [
     {
       id: 7,
       name: "Strawberry",
-      price: "9.05",
+      price: "9",
       rating: "4.5",
       img: "https://images.unsplash.com/photo-1582241785274-2009ebb9b440?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
@@ -207,7 +207,7 @@ export const BurgerData = [
       {
           id: 1,
           name: "Dairy Milk",
-          price: "19.05",
+          price: "19",
           rating: "4.5",
           img: "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
@@ -215,7 +215,7 @@ export const BurgerData = [
         {
           id: 2,
           name: "Choclate Special",
-          price: "21.05",
+          price: "21",
           rating: "4.5",
           img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1989&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
@@ -223,7 +223,7 @@ export const BurgerData = [
         {
           id: 3,
           name: "Kids Special",
-          price: "19.05",
+          price: "19",
           rating: "4.5",
           img: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=1872&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
@@ -231,7 +231,7 @@ export const BurgerData = [
         {
           id: 4,
           name: "Cheesecake",
-          price: "29.05",
+          price: "29",
           rating: "4.7",
           img: "https://images.unsplash.com/photo-1542826438-bd32f43d626f?q=80&w=1892&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
@@ -239,7 +239,7 @@ export const BurgerData = [
         {
           id: 5,
           name: "Lemon",
-          price: "19.05",
+          price: "19",
           rating: "4.5",
           img: "https://plus.unsplash.com/premium_photo-1664205766193-46193f865ae1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
@@ -247,7 +247,7 @@ export const BurgerData = [
         {
           id: 6,
           name: "Strawberry",
-          price: "20.05",
+          price: "20",
           rating: "4.5",
           img: "https://images.unsplash.com/photo-1622621746668-59fb299bc4d7?q=80&w=1866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
