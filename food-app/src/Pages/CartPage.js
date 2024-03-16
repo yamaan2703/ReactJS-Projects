@@ -1,21 +1,22 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { IoStarSharp } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
+import { removeItem, increaseItemQuantity, decreaseItemQuantity } from '../Features/CartSlice';
 // Import actions if needed
 
 function CartPage() {
   const { cart } = useSelector((state) => state.allcarts);
-  // Assuming you have actions imported and configured for modifying cart items
+  const dispatch = useDispatch()
 
   // Calculate total quantity and total price
   const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
   const totalPrice = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
 
   return (
-    <div className='bg-[#0f1d22]'>
-      <div className='container'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-40'>
+    <div className='bg-[#0f1d22] h-screen'>
+      <div className='container bg-[#0f1d22] p-5'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-40'>
           {cart.map((data) => (
             <div className='text-center m-4 shadow-md shadow-[#e4c590]' key={data.id}>
               <img src={data.img} alt={data.name} className='h-[300px]' />
@@ -37,12 +38,14 @@ function CartPage() {
                 <div className="flex items-center justify-between">
                 <div className="text-red-500 text-2xl">
                     {/* Button for deleting item */}
-                    <MdDelete />
+                    <MdDelete 
+                      onClick={() => dispatch(removeItem(data.id))}
+                    />
                   </div>
                   <div className="my-2">
                     <div className="flex items-center">
                       <button
-                        // onClick={() => dispatch(decreaseItemQuantity(data.id))}
+                       onClick={() => dispatch(decreaseItemQuantity(data.id))}
                         className="px-4 py-1 rounded-xl font-bold text-2xl bg-[#e4c590] text-white"
                       >
                         -
@@ -54,7 +57,7 @@ function CartPage() {
                         className="text-center text-white w-20 py-2 mx-2 bg-transparent border-2 border-[#e4c590]"
                       />
                       <button
-                        // onClick={() => dispatch(increaseItemQuantity(data.id))}
+                        onClick={() => dispatch(increaseItemQuantity(data.id))}
                         className="px-4 py-1 rounded-xl font-bold text-xl bg-[#e4c590] text-white"
                       >
                         +

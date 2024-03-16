@@ -3,12 +3,14 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../images/logo.png";
 import Button from "./Button";
 import { FaShoppingCart } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
+  const {totalQuantity} = useSelector((state) => state.allcarts)
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -120,11 +122,13 @@ const Navbar = () => {
           <div>
             <Button label="Book a Table" />
           </div>
-          <div className="px-3 text-white hover:text-[#c9ab81] transition duration-500">
-            <Link to="/cartpage">
-            <FaShoppingCart className="text-2xl" />
-            </Link>
-          </div>
+          <div className="px-3 text-white hover:text-[#c9ab81] transition duration-500 relative">
+  <Link to="/cartpage">
+    <FaShoppingCart className="text-3xl" />
+    <p className="bg-red-500 text-center rounded-full absolute bottom-2 left-2 w-[20px]">{totalQuantity}</p>
+  </Link>
+</div>
+
         </div>
       </div>
     </nav>
