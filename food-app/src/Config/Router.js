@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React from 'react'
 import Home from "../Pages/Home";
 import About from "../Pages/About";
-import Menu from "../Pages/Menu";
+// import Menu from "../Pages/Menu";
 import Contact from "../Pages/Contact";
 import Navbar from "../Components/Navbar";
 import FasrFood from "../Pages/FasrFood";
@@ -18,7 +18,7 @@ function AppRouter() {
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/menu" element={<Menu />} />
+        {/* <Route path="/menu" element={<Menu />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/fastfood" element={<FasrFood />} />
         <Route path="/desi" element={<Desi />} />

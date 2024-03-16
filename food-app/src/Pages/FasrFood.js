@@ -32,7 +32,7 @@ function FastFood() {
         </div>
       </div>
 
-      <div className="container mx-auto p-7">
+      <div className="container p-7 ">
         <h1
           style={{
             fontFamily: "Protest Riot, sans-serif",
@@ -43,14 +43,14 @@ function FastFood() {
         >
           Burgers...
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {BurgerData.map((item, index) => (
             <div key={index} className="relative bg-gray-700 rounded-xl">
               <div className="">
                 <img
                   src={item.img}
                   alt={item.name}
-                  className="rounded-t-xl w-full h-[200px]"
+                  className="rounded-t-xl w-full h-[150px] sm:h-[150px] lg:h-[250px]"
                 />
               </div>
               <div className="absolute top-0 right-0 p-2 bg-black bg-opacity-80 rounded-tr-xl rounded-bl-xl">
@@ -76,7 +76,7 @@ function FastFood() {
         </div>
       </div>
 
-      <div className="container mx-auto p-7">
+      <div className="container  p-7">
         <h1
           style={{
             fontFamily: "Protest Riot, sans-serif",
@@ -94,7 +94,7 @@ function FastFood() {
                 <img
                   src={item.img}
                   alt={item.name}
-                  className="rounded-t-xl w-full"
+                  className="rounded-t-xl w-full h-[150px] sm:h-[150px] lg:h-[250px]"
                 />
               </div>
               <div className="absolute top-0 right-0 p-2 bg-black bg-opacity-80 rounded-tr-xl rounded-bl-xl">
@@ -120,7 +120,7 @@ function FastFood() {
         </div>
       </div>
 
-      <div className="container mx-auto p-7">
+      <div className="container p-7">
         <h1
           style={{
             fontFamily: "Protest Riot, sans-serif",
@@ -138,7 +138,7 @@ function FastFood() {
                 <img
                   src={item.img}
                   alt={item.name}
-                  className="rounded-t-xl w-full h-[200px]"
+                  className="rounded-t-xl w-full h-[150px] sm:h-[150px] lg:h-[250px]"
                 />
               </div>
               <div className="absolute top-0 right-0 p-2 bg-black bg-opacity-80 rounded-tr-xl rounded-bl-xl">

@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`p-4 fixed top-0 w-full z-10 transition-all ${
+      className={`p-4 fixed top-0 w-full z-10 transition-all shadow-md shadow-white ${
         isScrolled ? "bg-gray-700" : "bg-transparent"
       }`}
     >
@@ -125,7 +125,7 @@ const Navbar = () => {
           <div className="px-3 text-white hover:text-[#c9ab81] transition duration-500 relative">
   <Link to="/cartpage">
     <FaShoppingCart className="text-3xl" />
-    <p className="bg-red-500 text-center rounded-full absolute bottom-2 left-2 w-[20px]">{totalQuantity}</p>
+    <p className="bg-red-500 text-center rounded-full absolute bottom-3 left-2 w-[20px] text-sm">{totalQuantity}</p>
   </Link>
 </div>
 
