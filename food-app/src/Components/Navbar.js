@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
-  const {totalQuantity} = useSelector((state) => state.allcarts)
+  const { totalQuantity } = useSelector((state) => state.allcarts);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -34,8 +34,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`p-4 fixed top-0 w-full z-10 transition-all shadow-md shadow-white ${
-        isScrolled ? "bg-gray-700" : "bg-transparent"
+      className={`fixed top-0 w-full z-10 transition-all shadow-md shadow-[#c9ab81] ${
+        isScrolled ? "bg-gray-900" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto lg:flex lg:justify-between lg:items-center sm:justify-between">
@@ -74,14 +74,18 @@ const Navbar = () => {
             {[
               { to: "/", label: "Home" },
               { to: "/about", label: "About" },
-              { to: "/", label: "Menu", dropdown: true },
+              { label: "Menu", dropdown: true },
               { to: "/contact", label: "Contact" },
             ].map((item) => (
               <div
                 key={item.to}
                 className="relative lg:ml-6 mt-2 lg:mt-0"
-                onMouseEnter={() => setIsDropdownOpen(true)}
-                onMouseLeave={() => setIsDropdownOpen(false)}
+                onMouseEnter={() => {
+                  if (item.dropdown) setIsDropdownOpen(true);
+                }}
+                onMouseLeave={() => {
+                  if (item.dropdown) setIsDropdownOpen(false);
+                }}
               >
                 <Link
                   to={item.to}
@@ -123,12 +127,13 @@ const Navbar = () => {
             <Button label="Book a Table" />
           </div>
           <div className="px-3 text-white hover:text-[#c9ab81] transition duration-500 relative">
-  <Link to="/cartpage">
-    <FaShoppingCart className="text-3xl" />
-    <p className="bg-red-500 text-center rounded-full absolute bottom-3 left-2 w-[20px] text-sm">{totalQuantity}</p>
-  </Link>
-</div>
-
+            <Link to="/cartpage">
+              <FaShoppingCart className="text-3xl" />
+              <p className="bg-red-500 text-center rounded-full absolute bottom-3 left-2 w-[20px] text-sm">
+                {totalQuantity}
+              </p>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
