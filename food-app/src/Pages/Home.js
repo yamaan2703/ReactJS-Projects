@@ -97,11 +97,13 @@ function Home() {
           </div>
 
           {/* <Slider /> */}
+          <div className="bg-[#0f1d22] m-0">
           <MySlider />
+          </div>
         </div>
 
         {/* Top Notch Start */}
-        <About />
+        {/* <About /> */}
       </div>
     </>
   );
