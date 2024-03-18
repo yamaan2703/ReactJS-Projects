@@ -98,12 +98,42 @@ function Home() {
 
           {/* <Slider /> */}
           <div className="bg-[#0f1d22] m-0">
-          <MySlider />
+            <MySlider />
           </div>
         </div>
-
         {/* Top Notch Start */}
-        {/* <About /> */}
+        <About />
+
+        <div className="home_section2">
+          <div className="container mt-10 pb-5">
+            <div className="text-center text-white">
+              <p className="text-lg md:text-lg lg:text-xl tracking-widest">
+                WHY CHOOSE US
+              </p>
+              <div className="flex justify-center py-1">
+                <img src={iconImage} className="w-[100px]" />
+              </div>
+              <h1
+                style={{
+                  fontFamily: "Protest Riot, sans-serif",
+                  // fontWeight: 400,
+                  fontStyle: "normal",
+                }}
+                className="text-3xl md:text-3xl lg:text-6xl text-[#e4c590] py-2"
+              >
+                Our Strength
+              </h1>
+            </div>
+
+            <div className="row">
+              <div className="col-md-3">
+                <div className="">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
