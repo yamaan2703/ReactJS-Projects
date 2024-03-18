@@ -5,7 +5,7 @@ import Button from '../Components/Button'
 function About() {
   return (
     <div className='about_section bg-[#0f1d22]'>
-      <div className='container pt-40 pb-10'>
+      <div className='container pt-28 md:pt-28 lg:pt-40 pb-10'>
         <div className='row'>
           <div className='col-md-6'>
             <div className='about_text text-white text-center p-3 w-full md:w-full lg:w-[500px] mx-0 md:mx-0 lg:mx-5'>
