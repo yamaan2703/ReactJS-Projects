@@ -51,7 +51,7 @@ export const BurgerData = [
   
   export const SandwitchData = [
     {
-      id: 1,
+      id: 7,
       name: "Paneer Sandwiches",
       price: "20",
       rating: "4.5",
@@ -59,7 +59,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 2,
+      id: 8,
       name: "Veg Special Sandwiches",
       price: "19",
       rating: "4.3",
@@ -67,7 +67,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 3,
+      id: 9,
       name: "Club Sandwiches",
       price: "12.05",
       rating: "4.5",
@@ -75,7 +75,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 4,
+      id: 10,
       name: "Chicken Sandwiches",
       price: "13.05",
       rating: "4.5",
@@ -83,7 +83,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 5,
+      id: 11,
       name: "Beef Sandwiches",
       price: "15.05",
       rating: "4.7",
@@ -91,7 +91,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 6,
+      id: 12,
       name: "Cheese Sandwiches",
       price: "10.05",
       rating: "4.5",
@@ -102,7 +102,7 @@ export const BurgerData = [
   
   export const PizzaData = [
     {
-      id: 1,
+      id: 13,
       name: "Double Cheeze Pizza",
       price: "30",
       rating: "4.5",
@@ -110,7 +110,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 2,
+      id: 14,
       name: "Veg Special Pizza",
       price: "34",
       rating: "4.7",
@@ -118,7 +118,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 3,
+      id: 15,
       name: "Tandori Pizza",
       price: "37",
       rating: "4.5",
@@ -126,7 +126,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 4,
+      id: 16,
       name: "BBQ Pizza",
       price: "30",
       rating: "4.5",
@@ -134,7 +134,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 5,
+      id: 17,
       name: "Malai Boti Pizza",
       price: "30",
       rating: "4.5",
@@ -142,7 +142,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 6,
+      id: 18,
       name: "Peproni Pizza",
       price: "32",
       rating: "4.5",
@@ -154,7 +154,7 @@ export const BurgerData = [
   // Deseret
   export const CupCakeData = [
     {
-      id: 2,
+      id: 19,
       name: "Oreo Choclate",
       price: "11",
       rating: "4.3",
@@ -162,7 +162,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 3,
+      id: 20,
       name: "Cherry Ice",
       price: "9",
       rating: "4.5",
@@ -170,7 +170,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 4,
+      id: 21,
       name: "Icing with sprinkles",
       price: "7",
       rating: "4.5",
@@ -178,7 +178,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 5,
+      id: 22,
       name: "Dark Choclate",
       price: "12",
       rating: "4.5",
@@ -186,7 +186,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 6,
+      id: 23,
       name: "Choclate Chips",
       price: "9",
       rating: "4.5",
@@ -194,7 +194,7 @@ export const BurgerData = [
       desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
     },
     {
-      id: 7,
+      id: 24,
       name: "Strawberry",
       price: "9",
       rating: "4.5",
@@ -205,7 +205,7 @@ export const BurgerData = [
   
   export const CakeData = [
       {
-          id: 1,
+          id: 25,
           name: "Dairy Milk",
           price: "19",
           rating: "4.5",
@@ -213,7 +213,7 @@ export const BurgerData = [
           desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
         },
         {
-          id: 2,
+          id: 26,
           name: "Choclate Special",
           price: "21",
           rating: "4.5",
@@ -221,7 +221,7 @@ export const BurgerData = [
           desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
         },
         {
-          id: 3,
+          id: 27,
           name: "Kids Special",
           price: "19",
           rating: "4.5",
@@ -229,7 +229,7 @@ export const BurgerData = [
           desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
         },
         {
-          id: 4,
+          id: 28,
           name: "Cheesecake",
           price: "29",
           rating: "4.7",
@@ -237,7 +237,7 @@ export const BurgerData = [
           desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
         },
         {
-          id: 5,
+          id: 29,
           name: "Lemon",
           price: "19",
           rating: "4.5",
@@ -245,7 +245,7 @@ export const BurgerData = [
           desc: "Indulge in a symphony of flavors with our signature dish, expertly crafted to tantalize your taste buds.",
         },
         {
-          id: 6,
+          id: 30,
           name: "Strawberry",
           price: "20",
           rating: "4.5",
@@ -256,7 +256,7 @@ export const BurgerData = [
   
   export const CoffeeData = [
       {
-          id: 1,
+          id: 31,
           name: "Black Coffee",
           price: "25",
           volume: "116 ml",
@@ -265,7 +265,7 @@ export const BurgerData = [
           desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
       },
       {
-          id: 2,
+          id: 32,
           name: "Cappuccinco",
           price: "30",
           volume: "110 ml",
@@ -274,7 +274,7 @@ export const BurgerData = [
           desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
       },
       {
-          id: 3,
+          id: 33,
           name: "Latte",
           price: "15",
           volume: "100 ml",
@@ -283,7 +283,7 @@ export const BurgerData = [
           desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
       },
       {
-          id: 4,
+          id: 34,
           name: "Espresso",
           price: "35",
           volume: "125 ml",
@@ -292,7 +292,7 @@ export const BurgerData = [
           desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
       },
       {
-          id: 5,
+          id: 35,
           name: "Mocha",
           price: "15",
           volume: "116 ml",
@@ -301,7 +301,7 @@ export const BurgerData = [
           desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
       },
       {
-          id: 6,
+          id: 36,
           name: "Americano",
           price: "30",
           volume: "126 ml",

@@ -10,6 +10,7 @@ import FasrFood from "../Pages/FasrFood";
 import Desi from "../Pages/Desi";
 import Dessert from "../Pages/Dessert";
 import CartPage from "../Pages/CartPage";
+import Footer from "../Components/footer";
 
 function AppRouter() {
   return (
@@ -25,6 +26,7 @@ function AppRouter() {
         <Route path="/dessert" element={<Dessert />} />
         <Route path="/cartpage" element={<CartPage />} />
     </Routes>
+    <Footer />
     </BrowserRouter>
   )
 }

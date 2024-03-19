@@ -34,8 +34,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`py-1 fixed top-0 w-full z-10 transition-all shadow-md shadow-[#c9ab81] ${
-        isScrolled ? "bg-gray-900" : "bg-transparent"
+      className={`py-1 fixed top-0 w-full z-10 transition-all ${
+        isScrolled ? "bg-[#171819]" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto lg:flex lg:justify-between lg:items-center sm:justify-between">
@@ -90,24 +90,18 @@ const Navbar = () => {
                 <Link
                   to={item.to}
                   className={`text-white rounded-md px-3 py-2 text-lg font-medium hover:text-[#c9ab81] ${
-                    location.pathname === item.to && "text-[#c9ab81]"
+                    location.pathname === item.to ? "text-[#c9ab81]" : "" // Condition for active link
                   }`}
                 >
                   {item.label}
-                </Link>
+                </Link>{" "}
                 {item.dropdown && isDropdownOpen && (
                   <div className="absolute top-full left-0 mt-2 bg-[#0f1d22] w-[100px] rounded-md shadow-lg">
                     <Link
                       to="/fastfood"
-                      className="block px-4 py-2 text-white hover:bg-[#c9ab81] "
+                      className="block px-4 py-2 text-white hover:bg-[#c9ab81] text-md"
                     >
                       Fast Food
-                    </Link>
-                    <Link
-                      to="/desi"
-                      className="block px-4 py-2 text-white hover:bg-[#c9ab81]"
-                    >
-                      Desi
                     </Link>
                     <Link
                       to="/dessert"
@@ -129,9 +123,11 @@ const Navbar = () => {
           <div className="px-3 text-white hover:text-[#c9ab81] transition duration-500 relative">
             <Link to="/cartpage">
               <FaShoppingCart className="text-3xl" />
-              <p className="bg-red-500 text-center rounded-full absolute bottom-3 left-2 w-[20px] text-sm">
-                {totalQuantity}
-              </p>
+              {totalQuantity > 0 && (
+                <p className="bg-red-500 text-center rounded-full absolute bottom-3 left-2 w-[20px] text-sm">
+                  {totalQuantity}
+                </p>
+              )}
             </Link>
           </div>
         </div>
