@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { IoStarSharp } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
 import { removeItem, increaseItemQuantity, decreaseItemQuantity } from '../Features/CartSlice';
+import Button from "../Components/Button"
 // Import actions if needed
 
 function CartPage() {
@@ -16,10 +17,10 @@ function CartPage() {
   return (
     <div className='bg-[#0f1d22] h-screen'>
       <div className='container bg-[#0f1d22] p-5'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-40'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-20'>
           {cart.map((data) => (
             <div className='text-center m-4 shadow-md shadow-[#e4c590]' key={data.id}>
-              <img src={data.img} alt={data.name} className='h-[300px]' />
+              <img src={data.img} alt={data.name} className='h-[300px] w-full' />
               <div className='p-2 text-center'>
                 <h1 className="text-2xl text-[#e4c590] font-serif py-1">
                   {data.name}
@@ -68,10 +69,10 @@ function CartPage() {
               </div>
             </div>
           ))}
-          {/* Cart summary */}
-          <div className="row">
-            <div className="col-md-4">
-              <div className="cash_cart p-3 bg-gray-700 shadow-md my-4 shadow-[#e4c590] rounded-xl text-white">
+         
+          <div className="">
+            <div className="">
+              <div className="cash_cart bg-gray-700 text-white mt-4 p-2 rounded-xl shadow-md shadow-[#e4c590]">
                 <div className="flex justify-between py-1">
                   <p className="text-lg">Total Quantity:</p>
                   <p className="text-lg">{totalQuantity}</p>
@@ -81,11 +82,9 @@ function CartPage() {
                   <p className="text-lg">$ {totalPrice}</p>
                 </div>
                 <hr className="text-[#e4c590]" />
-                <div className="text-center pt-3">
-                  {/* Button for payment */}
-                  <button className="px-4 py-2 bg-[#e4c590] text-gray-900 rounded-xl font-bold text-xl">
-                    PAY NOW
-                  </button>
+                <div className="flex justify-center py-2">
+                 <Button label="Pay Now"/>
+                  
                 </div>
               </div>
             </div>

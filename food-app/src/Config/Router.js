@@ -26,7 +26,7 @@ function AppRouter() {
         <Route path="/dessert" element={<Dessert />} />
         <Route path="/cartpage" element={<CartPage />} />
     </Routes>
-    <Footer />
+    {/* <Footer /> */}
     </BrowserRouter>
   )
 }
