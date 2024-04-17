@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import AppRouter from './Config/Router';
 
 function App() {
   return (
     <>
-    <h1 className='text-center text-5xl'>Docto Booking App</h1>
+    <AppRouter />
     </>
   );
 }
