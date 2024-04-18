@@ -4,6 +4,13 @@ import AppBtn from "../Components/AppBtn";
 import AppInp from "../Components/AppInp";
 import { IoSearch } from "react-icons/io5";
 import { TbDental } from "react-icons/tb";
+import { FaHeartbeat } from "react-icons/fa";
+import { FaLungs } from "react-icons/fa";
+import { PiBrainFill } from "react-icons/pi";
+import { IoEarSharp } from "react-icons/io5";
+import { FaUserDoctor } from "react-icons/fa6";
+
+
 function Home() {
   return (
     <>
@@ -58,29 +65,33 @@ function Home() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-6 gap-2 px-10 py-5">
-              <div className="bg-blue-200 text-blue-700 flex flex-col items-center justify-center p-3 rounded-xl">
+            <div className="grid grid-cols-1 lg:grid-cols-6 gap-2 py-5 px-12">
+              <div className="bg-blue-200 text-blue-700 flex flex-col items-center justify-center py-5 rounded-xl">
                 <TbDental className="text-5xl "/>
                 <p className="font-semibold">Dentist</p>
               </div>
-              <div className="bg-blue-200 text-blue-700 flex flex-col items-center justify-center p-3 rounded-xl">
-                <TbDental className="text-5xl "/>
-                <p className="font-semibold">Dentist</p>
-              </div><div className="bg-blue-200 text-blue-700 flex flex-col items-center justify-center p-3 rounded-xl">
-                <TbDental className="text-5xl "/>
-                <p className="font-semibold">Dentist</p>
-              </div><div className="bg-blue-200 text-blue-700 flex flex-col items-center justify-center p-3 rounded-xl">
-                <TbDental className="text-5xl "/>
-                <p className="font-semibold">Dentist</p>
-              </div><div className="bg-blue-200 text-blue-700 flex flex-col items-center justify-center p-3 rounded-xl">
-                <TbDental className="text-5xl "/>
-                <p className="font-semibold">Dentist</p>
-              </div><div className="bg-blue-200 text-blue-700 flex flex-col items-center justify-center p-3 rounded-xl">
-                <TbDental className="text-5xl "/>
-                <p className="font-semibold">Dentist</p>
+              <div className="bg-blue-200 text-blue-700 flex flex-col items-center justify-center py-5 rounded-xl">
+                <FaHeartbeat className="text-5xl "/>
+                <p className="font-semibold">Cardiologist</p>
+              </div><div className="bg-blue-200 text-blue-700 flex flex-col items-center justify-center py-5 rounded-xl">
+                <FaLungs className="text-5xl "/>
+                <p className="font-semibold">Orthopedic</p>
+              </div><div className="bg-blue-200 text-blue-700 flex flex-col items-center justify-center py-5 rounded-xl">
+                <PiBrainFill className="text-5xl "/>
+                <p className="font-semibold">Neurologist</p>
+              </div><div className="bg-blue-200 text-blue-700 flex flex-col items-center justify-center py-5 rounded-xl">
+                <IoEarSharp className="text-5xl "/>
+                <p className="font-semibold">Otology</p>
+              </div><div className="bg-blue-200 text-blue-700 flex flex-col items-center justify-center py-5 rounded-xl">
+                <FaUserDoctor className="text-5xl "/>
+                <p className="font-semibold">General Doctors</p>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="section_3">
+          
         </div>
       </div>
     </>
