@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../images/logo.png";
 import { FaUserCircle } from "react-icons/fa";
-import AppDropdown from "./AppDropdown"; // Import the Dropdown component
+import AppDropdown from "./AppDropdown"; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`py-4 fixed top-0 w-full z-10 transition-all shadow-black ${
+      className={`py-4 fixed top-0 w-full z-10 transition-all shadow-xl ${
         isScrolled ? "bg-white" : "bg-white"
       }`}
     >

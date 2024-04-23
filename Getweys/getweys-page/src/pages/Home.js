@@ -22,7 +22,7 @@ function Home() {
     <>
       <div className="home_page relative top-28">
         <div className="section_1">
-          <div className="container">
+          <div className="container p-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="py-4 px-4 md:px-4 lg:px-12">
                 <h1 className="text-3xl md:text-3xl lg:text-4xl font-semibold text-gray-800 py-2">
@@ -148,72 +148,133 @@ function Home() {
         </div>
 
         <div className="section_4 bg-gray-200">
-            <div className="container p-5">
+          <div className="container p-5">
             <div className="flex flex-col justify-center items-center text-center pt-10">
-              <p className="text-[#ec193f] font-bold py-5">
-              SERVICES
-              </p>
+              <p className="text-[#ec193f] font-bold py-5">SERVICES</p>
               <h1 className="text-3xl md:text-3xl lg:text-4xl font-semibold text-gray-800 py-2">
-              Let’s Check Our Services
+                Let’s Check Our Services
               </h1>
               <p className="py-2 text-gray-600 max-w-xs md:max-w-sm lg:max-w-lg xl:max-w-xl">
-              At Getweys, we offer you a wide variety of services that can solve your problems. We provide you with the services required to boost your startup business online.
+                At Getweys, we offer you a wide variety of services that can
+                solve your problems. We provide you with the services required
+                to boost your startup business online.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-10 gap-4">
-               <div className="flex flex-col justify-center items-center text-center p-3 px-5">
-                   <MdMobileScreenShare className="text-6xl text-[#ec193f] bg-white p-3 shadow-xl rounded-full"/>
-                   <p className="text-md py-2 ">Mobile Development</p>
-               </div>
+              <div className="flex flex-col justify-center items-center text-center p-3 px-5">
+                <MdMobileScreenShare className="text-6xl text-[#ec193f] bg-white p-3 shadow-xl rounded-full" />
+                <p className="text-md py-2 ">Mobile Development</p>
+              </div>
 
-               <div className="flex flex-col justify-center items-center text-center p-3 px-5">
-                   <FaCreditCard className="text-6xl text-[#ec193f] p-3 bg-white shadow-xl rounded-full"/>
-                   <p className="text-md py-2 ">Web Development</p>
-               </div>
+              <div className="flex flex-col justify-center items-center text-center p-3 px-5">
+                <FaCreditCard className="text-6xl text-[#ec193f] p-3 bg-white shadow-xl rounded-full" />
+                <p className="text-md py-2 ">Web Development</p>
+              </div>
 
-               <div className="flex flex-col justify-center items-center text-center p-3 px-5">
-                   <SiAltiumdesigner className="text-6xl text-[#ec193f] p-3 bg-white shadow-xl rounded-full"/>
-                   <p className="text-lg py-2">Graphics Designing</p>
-               </div>
+              <div className="flex flex-col justify-center items-center text-center p-3 px-5">
+                <SiAltiumdesigner className="text-6xl text-[#ec193f] p-3 bg-white shadow-xl rounded-full" />
+                <p className="text-lg py-2">Graphics Designing</p>
+              </div>
 
-               <div className="flex flex-col justify-center items-center text-center p-3 px-5">
-                   <BiSolidNotepad className="text-6xl text-[#ec193f] p-3 bg-white shadow-xl rounded-full"/>
-                   <p className="text-lg py-2">Content Writing</p>
-               </div>
+              <div className="flex flex-col justify-center items-center text-center p-3 px-5">
+                <BiSolidNotepad className="text-6xl text-[#ec193f] p-3 bg-white shadow-xl rounded-full" />
+                <p className="text-lg py-2">Content Writing</p>
+              </div>
 
-               <div className="flex flex-col justify-center items-center text-center p-3 px-5">
-                   <MdShoppingCart className="text-6xl text-[#ec193f] bg-white p-3 shadow-xl rounded-full"/>
-                   <p className="text-lg py-2">Social Media Management</p>
-               </div>
+              <div className="flex flex-col justify-center items-center text-center p-3 px-5">
+                <MdShoppingCart className="text-6xl text-[#ec193f] bg-white p-3 shadow-xl rounded-full" />
+                <p className="text-lg py-2">Social Media Management</p>
+              </div>
 
-               <div className="flex flex-col justify-center items-center text-center p-3 px-5">
-                   <BsHash className="text-6xl text-[#ec193f] p-3 bg-white shadow-xl rounded-full"/>
-                   <p className="text-lg py-2">Digitial Marketing</p>
-               </div>
+              <div className="flex flex-col justify-center items-center text-center p-3 px-5">
+                <BsHash className="text-6xl text-[#ec193f] p-3 bg-white shadow-xl rounded-full" />
+                <p className="text-lg py-2">Digitial Marketing</p>
+              </div>
 
-               <div className="flex flex-col justify-center items-center text-center p-3 px-5">
-                   <IoVideocamOutline className="text-6xl text-[#ec193f] bg-white p-3 shadow-xl rounded-full"/>
-                   <p className="text-lg py-2">Mobile Development</p>
-               </div>
+              <div className="flex flex-col justify-center items-center text-center p-3 px-5">
+                <IoVideocamOutline className="text-6xl text-[#ec193f] bg-white p-3 shadow-xl rounded-full" />
+                <p className="text-lg py-2">Mobile Development</p>
+              </div>
 
-               <div className="flex flex-col justify-center items-center text-center p-3 px-5">
-                   <PiTelevisionSimpleLight className="text-6xl text-[#ec193f] bg-white p-3 shadow-xl rounded-full"/>
-                   <p className="text-lg py-2">2D/3D Modeling</p>
-               </div>
+              <div className="flex flex-col justify-center items-center text-center p-3 px-5">
+                <PiTelevisionSimpleLight className="text-6xl text-[#ec193f] bg-white p-3 shadow-xl rounded-full" />
+                <p className="text-lg py-2">2D/3D Modeling</p>
+              </div>
 
-               <div className="flex flex-col justify-center items-center text-center p-3 px-5">
-                   <RiSeoLine className="text-6xl text-[#ec193f] p-3 bg-white shadow-xl rounded-full"/>
-                   <p className="text-lg py-2">SEO Service</p>
-               </div>
+              <div className="flex flex-col justify-center items-center text-center p-3 px-5">
+                <RiSeoLine className="text-6xl text-[#ec193f] p-3 bg-white shadow-xl rounded-full" />
+                <p className="text-lg py-2">SEO Service</p>
+              </div>
 
-               <div className="flex flex-col justify-center items-center text-center p-3 px-5">
-                   <IoVolumeHighOutline className="text-6xl text-[#ec193f] p-3 bg-white shadow-xl rounded-full"/>
-                   <p className="text-lg py-2">Advertisment</p>
-               </div>
+              <div className="flex flex-col justify-center items-center text-center p-3 px-5 mb-6">
+                <IoVolumeHighOutline className="text-6xl text-[#ec193f] p-3 bg-white shadow-xl rounded-full" />
+                <p className="text-lg py-2">Advertisment</p>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
+
+        <div className="section_5">
+          <div className="container p-5">
+            <div className="flex flex-col justify-center items-center text-center pt-10">
+              <p className="text-[#ec193f] font-bold py-5">RECENT PROJECT</p>
+              <h1 className="text-3xl md:text-3xl lg:text-4xl font-semibold text-gray-800 py-2">
+                Our Portfolio
+              </h1>
+              <p className="py-2 text-gray-600 max-w-xs md:max-w-sm lg:max-w-lg xl:max-w-xl">
+                Over 1000+ Projects completed. More than 950+ Customers
+                Satisfied. Getweys uses State-of-the-art Strategies that help
+                its customer find better solutions to their problems.
+              </p>
+              <div class="flex flex-col md:flex-row lg:flex-row justify-center items-center">
+                <div class="w-full md:w-[150px] mb-2 md:mb-0 lg:mr-2">
+                  <AppBtn label="Development" />
+                </div>
+                <div class="w-full md:w-[150px] mb-2 md:mb-0 lg:mx-2">
+                  <AppBtn label="Design" />
+                </div>
+                <div class="w-full md:w-[150px]">
+                  <AppBtn label="Marketing" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section_7 bg-gray-200">
+          <div className="container p-5">
+            <div className="flex flex-col justify-center items-center text-center pt-10">
+              <p className="text-[#ec193f] font-bold py-5">OUR BADGES</p>
+              <h1 className="text-3xl md:text-3xl lg:text-4xl font-semibold text-gray-800 py-2">
+                Getweys Earn Recognitions
+              </h1>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-5">
+              <div class="w-full md:w-[300px] flex justify-center items-center">
+                <img
+                  src="https://www.getweys.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FCLUTCH-BADGE.f2b3c7c0.png&w=640&q=75"
+                  alt="CLUTCH BADGE"
+                />
+              </div>
+              <div class="w-full md:w-[300px] flex justify-center items-center">
+                <img
+                  src="https://www.getweys.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fbfirms-certified.0e2bc81f.png&w=3840&q=75"
+                  alt="Bfirms Certified"
+                />
+              </div>
+              <div class="w-full md:w-[300px] flex justify-center items-center">
+                <img
+                  src="https://www.getweys.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FBG-BADGE.c5e8557a.png&w=640&q=75"
+                  alt="BG BADGE"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section_8"></div>
       </div>
     </>
   );
