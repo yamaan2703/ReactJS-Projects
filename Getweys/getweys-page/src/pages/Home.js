@@ -16,8 +16,39 @@ import { IoVideocamOutline } from "react-icons/io5";
 import { PiTelevisionSimpleLight } from "react-icons/pi";
 import { RiSeoLine } from "react-icons/ri";
 import { IoVolumeHighOutline } from "react-icons/io5";
+import AppAccordion from "../components/AppAccordion";
+import AppForm from "../components/AppForm";
+import AppFooter from "../components/AppFooter";
+import AppCarousel from "../components/AppCarousel";
 
 function Home() {
+  const accordionItems = [
+    {
+      title: "How long has Getweys been around?",
+      content:
+        "Getweys is a well-known Software Development company that was formed in 2020. We are the next generation of company innovation, utilizing technology to deliver cutting-edge business automation, software development, and consulting services",
+    },
+    {
+      title: "What is the cost of developing a website?",
+      content:
+        "Getweys offers its customers the best development services with many great user experiences considering website design and development in the Pakistan. However, the cost of developing a website depends on the needs of the client.",
+    },
+    {
+      title: "Do you provide website hosting services?",
+      content:
+        "Getweys has many services to help you grow further in the market, and website hosting is one of them. Getweys software house in the Pakistan offers a variety of hosting services depending on your needs.",
+    },
+    {
+      title: "Do I have to pay for product deployment?",
+      content:
+        "As you may not know, development takes a tremendous amount of effort to push the product into the international market and get more customers online. Getweys software house helps you achieve this, as they are offering affordable Plans based on your needs.",
+    },
+    {
+      title: "In which regions are your services available?",
+      content:
+        "Getweys provides competitively priced outsourcing services to the United States Of America and Pakistan, and its nearby areas.",
+    },
+  ];
   return (
     <>
       <div className="home_page relative top-28">
@@ -239,10 +270,14 @@ function Home() {
                 </div>
               </div>
             </div>
+
+            <div className="my-10">
+              <AppCarousel />
+            </div>
           </div>
         </div>
 
-        <div className="section_7 bg-gray-200">
+        <div className="section_6 bg-gray-200">
           <div className="container p-5">
             <div className="flex flex-col justify-center items-center text-center pt-10">
               <p className="text-[#ec193f] font-bold py-5">OUR BADGES</p>
@@ -274,7 +309,73 @@ function Home() {
           </div>
         </div>
 
-        <div className="section_8"></div>
+        <div className="section_7">
+          <div className="container p-5 pt-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex flex-col justify-center  pt-10">
+                <p className="text-[#ec193f] font-bold py-5">
+                  FREQUENTLY ASKED QUESTIONS
+                </p>
+                <h1 className="text-3xl md:text-3xl lg:text-4xl font-semibold text-gray-800 py-2">
+                  We help you with your Problems
+                </h1>
+                <p className="py-2 text-gray-600 max-w-xs md:max-w-sm lg:max-w-lg xl:max-w-xl">
+                  Over 1000+ Projects completed. More than 950+ Customers
+                  Satisfied. Getweys uses State-of-the-art Strategies that help
+                  its customer find better solutions to their problems.
+                </p>
+              </div>
+              <div className="flex flex-col justify-center">
+                <AppAccordion items={accordionItems} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section_8">
+          <div className="container p-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex justify-center items-center bg-yellow-500 p-5 relative ">
+                <div className="border bg-slate-400">
+              <div className="rounded-full border-2 border-black p-2" >
+                <img src="https://www.getweys.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ffeedback-img1.8affc893.webp&w=640&q=75"  className="w-auto"/>
+              </div>
+              
+              <div className="absolute top-10 right-20">
+               <img src="https://www.getweys.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ffeedback-img3.8aa37c63.webp&w=256&q=75"/>
+              </div>
+              <div>
+              <img src="https://www.getweys.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ffeedback-img2.b788adcc.webp&w=256&q=75"/>
+              </div>
+
+              <div>
+              <img src="https://www.getweys.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ffeedback-img4.8fcdbf73.webp&w=256&q=75"/>
+              </div>
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div className="section_9">
+          <div className="container p-5">
+            <div className="flex flex-col justify-center items-center text-center pt-10">
+              <p className="text-[#ec193f] font-bold py-5">GET IN TOUCH</p>
+              <h1 className="text-3xl md:text-3xl lg:text-4xl font-semibold text-gray-800 py-2">
+                Get a Quote
+              </h1>
+            </div>
+            <div className="">
+              <AppForm />
+            </div>
+          </div>
+        </div>
+
+        <div className="footer">
+          <AppFooter />
+        </div>
       </div>
     </>
   );
