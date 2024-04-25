@@ -26,18 +26,18 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`p-4 fixed top-0 w-full z-10 transition-all ${
-        isScrolled ? "bg-blue-500" : "bg-blue-500"
+      className={`p-4 fixed top-0 w-full z-10 transition-all shadow-xl  ${
+        isScrolled ? "bg-white" : "bg-white"
       }`}
     >
       <div className="container mx-auto lg:flex lg:justify-around lg:items-center sm:justify-between">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-white font-bold text-xl">
+          <Link to="/" className=" font-bold text-xl">
             <img className="h-[50px]" src={logo} alt="Logo" />
           </Link>
 
           <button
-            className="lg:hidden text-white focus:outline-none"
+            className="lg:hidden text-blue-900 focus:outline-none"
             onClick={toggleNavbar}
           >
             <svg
@@ -71,7 +71,7 @@ const Navbar = () => {
               <Link
                 key={item.to}
                 to={item.to}
-                className={`text-white p-1 text-xl font-medium mx-3 hover:text-blue-900 ${
+                className={`text-blue-500 p-1 text-xl font-semibold mx-3 hover:text-blue-900 ${
                   location.pathname === item.to && "text-blue-900"
                 }`}
               >

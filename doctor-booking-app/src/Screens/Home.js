@@ -10,8 +10,11 @@ import { PiBrainFill } from "react-icons/pi";
 import { IoEarSharp } from "react-icons/io5";
 import { FaUserDoctor } from "react-icons/fa6";
 import AppCard from "../Components/AppCard";
+import { useNavigate, useNavigation } from "react-router-dom";
 
 function Home() {
+   const navigate = useNavigate()
+
   return (
     <>
       <AppNavbar />
@@ -74,27 +77,33 @@ function Home() {
 
             <div className="flex justify-center items-center">
               <div className="grid grid-cols-1 md:grid-cols-6 gap-4 my-2">
-                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out">
+                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out"
+                onClick={() => navigate("/bookingdashboard")}
+                >
                   <TbDental className="font-extrabold text-4xl" />
                   <p className="text-lg">Dentist</p>
                 </div>
-                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out">
+                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out"
+                onClick={() => navigate("/bookingdashboard")}
+                >
                   <FaHeartbeat className="font-extrabold text-4xl" />
                   <p className="text-lg">Cardiologist</p>
                 </div>
-                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out">
+                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out"
+                onClick={() => navigate("/bookingdashboard")}
+                >
                   <RiLungsFill className="font-extrabold text-4xl" />
                   <p className="text-lg">Orthopedic</p>
                 </div>
-                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out">
+                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out" onClick={() => navigate("/bookingdashboard")}>
                   <PiBrainFill className="font-extrabold text-4xl" />
                   <p className="text-lg">Neurologist</p>
                 </div>
-                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out">
+                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out" onClick={() => navigate("/bookingdashboard")}>
                   <IoEarSharp className="font-extrabold text-4xl" />
                   <p className="text-lg">Otology</p>
                 </div>
-                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out">
+                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out" onClick={() => navigate("/bookingdashboard")}>
                   <FaUserDoctor className="font-extrabold text-4xl" />
                   <p className="text-lg">General Doctor</p>
                 </div>
