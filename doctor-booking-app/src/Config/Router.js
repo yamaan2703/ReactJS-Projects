@@ -5,11 +5,13 @@ import Home from "../Screens/Home";
 import Details from "../Screens/Details";
 import BookingDashboard from "../Screens/BookingDashboard";
 import Dentist from "../Screens/Dentist";
+import AppNavbar from "../Components/AppNavbar"
 
 export default function AppRouter () {
     return (
         <>
         <BrowserRouter>
+        <AppNavbar />
         <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />

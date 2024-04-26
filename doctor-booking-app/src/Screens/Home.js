@@ -17,7 +17,7 @@ function Home() {
 
   return (
     <>
-      <AppNavbar />
+      
       <div className="home_pg relative">
         <div className="all_section absolute top-28">
           <div className="section_1 py-5 px-4 md:px-12">
@@ -121,7 +121,7 @@ function Home() {
                   name="Dr John Desis"
                   experience="12 Years"
                   address="This is an example card description. You can customize it as needed."
-                  imageUrl="https://plus.unsplash.com/premium_photo-1661764878654-3d0fc2eefcca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  imageUrl="https://plus.unsplash.com/premium_photo-1681996484614-6afde0d53071?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 />
               </div>
               <div>
@@ -130,7 +130,7 @@ function Home() {
                   name="Dr John Desis"
                   experience="12 Years"
                   address="This is an example card description. You can customize it as needed."
-                  imageUrl="https://plus.unsplash.com/premium_photo-1661764878654-3d0fc2eefcca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  imageUrl="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 />
               </div>
               <div>
@@ -139,7 +139,7 @@ function Home() {
                   name="Dr John Desis"
                   experience="12 Years"
                   address="This is an example card description. You can customize it as needed."
-                  imageUrl="https://plus.unsplash.com/premium_photo-1661764878654-3d0fc2eefcca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  imageUrl="https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 />
               </div>
               <div>
@@ -148,7 +148,7 @@ function Home() {
                   name="Dr John Desis"
                   experience="12 Years"
                   address="This is an example card description. You can customize it as needed."
-                  imageUrl="https://plus.unsplash.com/premium_photo-1661764878654-3d0fc2eefcca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  imageUrl="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 />
               </div>
             </div>

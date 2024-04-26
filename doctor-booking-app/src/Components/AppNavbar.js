@@ -64,7 +64,7 @@ const Navbar = () => {
         >
           <div className="lg:flex-grow sm:flex-1 flex flex-col lg:flex-row">
             {[
-              { to: "/", label: "Home" },
+              { to: "/home", label: "Home" },
               { to: "/", label: "Explore" },
               { to: "/", label: "Contact" },
             ].map((item) => (
@@ -85,7 +85,7 @@ const Navbar = () => {
           <div className="relative inline-block text-left">
             <div>
               <FaUserCircle
-                className="text-white text-3xl cursor-pointer"
+                className="text-blue-500 text-3xl cursor-pointer"
                 onClick={toggleNavbar}
               />
             </div>
