@@ -4,8 +4,8 @@ import SignUp from "../Screens/SignUp";
 import Home from "../Screens/Home";
 import Details from "../Screens/Details";
 import BookingDashboard from "../Screens/BookingDashboard";
-import Dentist from "../Screens/Dentist";
 import AppNavbar from "../Components/AppNavbar"
+import DoctorPg from "../Screens/DoctorPg";
 
 export default function AppRouter () {
     return (
@@ -17,8 +17,9 @@ export default function AppRouter () {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/home" element={<Home />} />
             <Route path="/details" element={<Details />} />
+            <Route path="/doctorpage" element={<DoctorPg />} />
             <Route path="/bookingdashboard" element={<BookingDashboard />} />
-            <Route path="/dentist" element={<Dentist />} />
+
         </Routes>
         </BrowserRouter>
         </>

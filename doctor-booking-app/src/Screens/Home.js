@@ -11,6 +11,7 @@ import { IoEarSharp } from "react-icons/io5";
 import { FaUserDoctor } from "react-icons/fa6";
 import AppCard from "../Components/AppCard";
 import { useNavigate, useNavigation } from "react-router-dom";
+import AppUserCard from "../Components/AppUserCard";
 
 function Home() {
    const navigate = useNavigate()
@@ -22,7 +23,7 @@ function Home() {
         <div className="all_section absolute top-28">
           <div className="section_1 py-5 px-4 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Text Section */}
+            
               <div className="text_section p-9">
                 <h1 className="text-3xl md:text-4xl font-bold">
                   Find & Book <span className="text-blue-700">Appointment</span>{" "}
@@ -44,7 +45,7 @@ function Home() {
                   <AppBtn label="Explore" />
                 </div>
               </div>
-              {/* Image Section */}
+             
               <div className="p-5">
                 <img
                   src="https://plus.unsplash.com/premium_photo-1661699717204-82c08926c77a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -78,32 +79,32 @@ function Home() {
             <div className="flex justify-center items-center">
               <div className="grid grid-cols-1 md:grid-cols-6 gap-4 my-2">
                 <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out"
-                onClick={() => navigate("/bookingdashboard")}
+                onClick={() => navigate("/home")}
                 >
                   <TbDental className="font-extrabold text-4xl" />
                   <p className="text-lg">Dentist</p>
                 </div>
                 <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out"
-                onClick={() => navigate("/bookingdashboard")}
+                onClick={() => navigate("/home")}
                 >
                   <FaHeartbeat className="font-extrabold text-4xl" />
                   <p className="text-lg">Cardiologist</p>
                 </div>
                 <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out"
-                onClick={() => navigate("/bookingdashboard")}
+                onClick={() => navigate("/home")}
                 >
                   <RiLungsFill className="font-extrabold text-4xl" />
                   <p className="text-lg">Orthopedic</p>
                 </div>
-                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out" onClick={() => navigate("/bookingdashboard")}>
+                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out" onClick={() => navigate("/home")}>
                   <PiBrainFill className="font-extrabold text-4xl" />
                   <p className="text-lg">Neurologist</p>
                 </div>
-                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out" onClick={() => navigate("/bookingdashboard")}>
+                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out" onClick={() => navigate("/home")}>
                   <IoEarSharp className="font-extrabold text-4xl" />
                   <p className="text-lg">Otology</p>
                 </div>
-                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out" onClick={() => navigate("/bookingdashboard")}>
+                <div className="rounded-xl flex flex-col justify-center items-center bg-blue-200 text-blue-700 py-9 px-3 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out" onClick={() => navigate("/home")}>
                   <FaUserDoctor className="font-extrabold text-4xl" />
                   <p className="text-lg">General Doctor</p>
                 </div>
@@ -113,7 +114,10 @@ function Home() {
 
           <div className="section_3">
             <div className="container p-12">
+              <div className="flex justify-between items-center">
             <h1 className="text-xl font-semibold my-1">Popular Doctors</h1>
+            {/* <h1 className="text-lg font-semibold my-1 text-blue-500">Explore More</h1> */}
+              </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
               <div>
                 <AppCard
@@ -152,12 +156,18 @@ function Home() {
                 />
               </div>
             </div>
+            <div className="flex justify-center items-center my-10">
+              <AppBtn onClick={() => navigate("/doctorpage")} label="Explore More"/>
+            </div>
             </div>
             </div>
         </div>
       </div>
+       
+     
     </>
   );
 }
 
 export default Home;
+ 
