@@ -6,6 +6,7 @@ import Details from "../Screens/Details";
 import BookingDashboard from "../Screens/BookingDashboard";
 import AppNavbar from "../Components/AppNavbar"
 import DoctorPg from "../Screens/DoctorPg";
+import CreateDrProfile from "../Screens/CreateDrProfile";
 
 export default function AppRouter () {
     return (
@@ -19,6 +20,7 @@ export default function AppRouter () {
             <Route path="/details" element={<Details />} />
             <Route path="/doctorpage" element={<DoctorPg />} />
             <Route path="/bookingdashboard" element={<BookingDashboard />} />
+            <Route path="/createdoctorprofile" element={<CreateDrProfile />} />
 
         </Routes>
         </BrowserRouter>
